@@ -5,6 +5,9 @@
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
 @media screen and (max-width:360px) {
+  body{
+    padding-top: 94px;
+  }
   div#_round{
     position: fixed;
     top: 40%;
@@ -28,16 +31,82 @@
     }
   }
   header{
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background: #303030;
     padding: 10px 0;
+    z-index: 8;
   }
   header span{
     padding: 5px;
     font-size: 20px;
     font-weight: 500;
     color: #fff;
+  }
+  nav{
+    position: fixed;
+    top: 47px;
+    left: 0;
+    width: 100%;
+    background: #303030;
+    padding: 10px 0;
+    color: #fff;
+    z-index: 8;
+  }
+  nav span{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  nav select{
+    padding: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 2px;
+    outline: none;
+  }
+  div#column_surahs{
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div#column_surahs p{
+    width: 95%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin: 5px 0;
+    background: #efefef;
+    color: #303030;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  div.surahs_main,
+  div.surahs_main div{
+    position: relative;
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div.surahs_main p{
+    width: 95%;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0;
+    color: #303030;
+    background: #fafafa;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   }
   div.div_1{
     position: absolute;
@@ -82,8 +151,12 @@
     align-self: flex-start;
     padding: 2px 0;
   }
+  div.common_div_1 button:active{
+    background: #0fc;
+    color: #000;
+  }
   footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
