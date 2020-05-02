@@ -87,6 +87,10 @@
     border-radius: 2px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   }
+  div#column_surahs p:active{
+    background: #0fc;
+    color: #000;
+  }
   div.surahs_main,
   div.surahs_main div{
     position: relative;
