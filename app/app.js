@@ -2,7 +2,7 @@ $(document).ready(function () {
   //-----
   var sura_counter = 0;
   var fivetnn_1 = 15;
-  var fourtnn_1 = 14;
+  var fourtnn_1 = fivetnn_1 - 1;
   //-----same_01_01
   $(window).scroll(function () {
     var ins_sr_1 = $('div.surahs_main div').text();
