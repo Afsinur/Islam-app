@@ -3,30 +3,35 @@ $(document).ready(function () {
   var sura_counter = 0;
   var fivetnn_1 = 15;
   var fourtnn_1 = fivetnn_1 - 1;
+  var arb, ban, eng;
   //-----same_01_01
   $(window).scroll(function () {
     var ins_sr_1 = $('div.surahs_main div').text();
     var ins_selt_1 = $('select#select_surahs').val();
     if (ins_sr_1 != '') {
-      var pos = ins_selt_1.indexOf(".");
-      var res = ins_selt_1.slice(0, pos);
-      $.ajax({
-        type:'get',
-        url:'json/surahs/'+res+'.json',
-        success:function (data) {
-          if (sura_counter > fourtnn_1 && sura_counter < data.length) {
-            console.log(sura_counter, data.length);
-            $('div.surahs_main div').append(`
-              <p>${data[sura_counter].eng}</p>
-              `);
-          }
-          sura_counter++;
-        }
-      });
+      if (eng == 'eng') {
+          console.log(eng);
+          var pos = ins_selt_1.indexOf(".");
+          var res = ins_selt_1.slice(0, pos);
+          $.ajax({
+            type:'get',
+            url:'json/surahs/'+res+'.json',
+            success:function (data) {
+              if (sura_counter > fourtnn_1 && sura_counter < data.length) {
+                console.log(sura_counter, data.length);
+                $('div.surahs_main div').append(`
+                  <p>${data[sura_counter].eng}</p>
+                  `);
+              }
+              sura_counter++;
+            }
+          });
+      }
     }
   });
   //-----same_01
   $('body').on('click', 'div#column_surahs > p', function () {
+    eng = 'eng';
     $('div#_round').removeAttr('style');
     sura_counter = 0;
     var x_1 = $(this).text();
@@ -78,6 +83,8 @@ $(document).ready(function () {
   $('body').on('click', 'nav span', function () {
     var x = $(this).text();
     if (x == 'Surahs') {
+      eng = 'N_eng';
+      console.log(eng);
       $('div#_round').removeAttr('style');
       sura_counter = 0;
       $.ajax({
@@ -92,6 +99,7 @@ $(document).ready(function () {
   });
   //-----same_01
   $('body').on('change', 'span > select#select_surahs', function () {
+    eng = 'eng';
     $('div#_round').removeAttr('style');
     sura_counter = 0;
     var x_1 = $(this).val();
@@ -117,6 +125,8 @@ $(document).ready(function () {
   $('body').on('click', 'header span', function () {
     var x = $(this).text();
     if (x == ' Islamic app') {
+      eng = 'N_eng';
+      console.log(eng);
       $('div#_round').removeAttr('style');
       sura_counter = 0;
       $.ajax({
@@ -133,6 +143,7 @@ $(document).ready(function () {
   $('body').on('click', 'div.common_div_1 button', function () {
     var x = $(this).find('span').text();
     if (x == 'Read Quran') {
+      eng = 'eng';
       $('div#_round').removeAttr('style');
       $.ajax({
         type:'get',
