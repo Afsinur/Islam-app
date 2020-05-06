@@ -1,458 +1,572 @@
 [
   {
-    "ban":"",
+    "arb":"1. الفاتحة",
+    "ban":"1. আল ফাতিহা",
     "eng":"1. Surah Fatiha"
   },
   {
-    "ban":"",
+    "arb":"2. البقرة",
+    "ban":"2. আল বাক্বারাহ",
     "eng":"2. Surah Baqarah"
   },
   {
-    "ban":"",
+    "arb":"3. آل عمران",
+    "ban":"3. আল ইমরান",
     "eng":"3. Surah Imran"
   },
   {
-    "ban":"",
+    "arb":"4. النساء",
+    "ban":"4. আন নিস",
     "eng":"4. Surah Nisa"
   },
   {
-    "ban":"",
+    "arb":"5. المائدة",
+    "ban":"5. আল মায়েদাহ",
     "eng":"5. Surah Maidah"
   },
   {
-    "ban":"",
+    "arb":"6. الأنعام",
+    "ban":"6. আল আন-আম",
     "eng":"6. Surah Anam"
   },
   {
-    "ban":"",
+    "arb":"7. الأعراف",
+    "ban":"7. আল আ’রাফ",
     "eng":"7. Surah Araf"
   },
   {
-    "ban":"",
+    "arb":"8. الأنفال",
+    "ban":"8. আল-আনফাল",
     "eng":"8. Surah Anfal"
   },
   {
-    "ban":"",
+    "arb":"9. التوبة",
+    "ban":"9. আত তাওবাহ",
     "eng":"9. Surah Taubah"
   },
   {
-    "ban":"",
+    "arb":"10. يونس",
+    "ban":"10. ইউনুস",
     "eng":"10. Surah Yunus"
   },
   {
-    "ban":"",
+    "arb":"11. هود",
+    "ban":"11. হুদ",
     "eng":"11. Surah Hud"
   },
   {
-    "ban":"",
+    "arb":"12. يوسف",
+    "ban":"12. ইউসূফ",
     "eng":"12. Surah Yusuf"
   },
   {
-    "ban":"",
+    "arb":"13. الرعد",
+    "ban":"13. রা’দ",
     "eng":"13. Surah Raad"
   },
   {
-    "ban":"",
+    "arb":"14. ابراهيم",
+    "ban":"14. ইব্রাহীম",
     "eng":"14. Surah Ibrahim"
   },
   {
-    "ban":"",
+    "arb":"15. الحجر",
+    "ban":"15. হিজর",
     "eng":"15. Surah Hijr"
   },
   {
-    "ban":"",
+    "arb":"16. النحل",
+    "ban":"16. নাহল",
     "eng":"16. Surah Nahl"
   },
   {
-    "ban":"",
+    "arb":"17. الإسراء",
+    "ban":"17. বনী ইসরাঈল",
     "eng":"17. Surah Isra"
   },
   {
-    "ban":"",
+    "arb":"18. الكهف",
+    "ban":"18. কাহফ",
     "eng":"18. Surah Kahf"
   },
   {
-    "ban":"",
+    "arb":"19. مريم",
+    "ban":"19. মারইয়াম",
     "eng":"19. Surah Maryam"
   },
   {
-    "ban":"",
+    "arb":"20. طه",
+    "ban":"20. ত্বোয়া-হ",
     "eng":"20. Surah Taha"
   },
   {
-    "ban":"",
+    "arb":"21. الأنبياء",
+    "ban":"21. আম্বিয়",
     "eng":"21. Surah Anbiya"
   },
   {
-    "ban":"",
+    "arb":"22. الحج",
+    "ban":"22. হাজ্জ্ব",
     "eng":"22. Surah Hajj"
   },
   {
-    "ban":"",
+    "arb":"23. المؤمنون",
+    "ban":"23. আল মু’মিনূন",
     "eng":"23. Surah Muminun"
   },
   {
-    "ban":"",
+    "arb":"24. النور",
+    "ban":"24. আন-নূর",
     "eng":"24. Surah Noor"
   },
   {
-    "ban":"",
+    "arb":"25. الفرقان",
+    "ban":"25. আল-ফুরকান",
     "eng":"25. Surah Furqan"
   },
   {
-    "ban":"",
+    "arb":"26. الشعراء",
+    "ban":"26. আশ-শো’আর",
     "eng":"26. Surah Shuara"
   },
   {
-    "ban":"",
+    "arb":"27. النمل",
+    "ban":"27. নমল",
     "eng":"27. Surah Naml"
   },
   {
-    "ban":"",
+    "arb":"28. القصص",
+    "ban":"28. আল কাসাস",
     "eng":"28. Surah Qasas"
   },
   {
-    "ban":"",
+    "arb":"29. العنكبوت",
+    "ban":"29. আল আনকাবুত",
     "eng":"29. Surah Ankabut"
   },
   {
-    "ban":"",
+    "arb":"30. الروم",
+    "ban":"30. আর-রূম",
     "eng":"30. Surah Rum"
   },
   {
-    "ban":"",
+    "arb":"31. لقمان",
+    "ban":"31. লোকমান",
     "eng":"31. Surah Luqman"
   },
   {
-    "ban":"",
+    "arb":"32. السجدة",
+    "ban":"32. সেজদাহ",
     "eng":"32. Surah Sajdah"
   },
   {
-    "ban":"",
+    "arb":"33. الأحزاب",
+    "ban":"33. আল আহযাব",
     "eng":"33. Surah Ahzab"
   },
   {
-    "ban":"",
+    "arb":"34. سبإ",
+    "ban":"34. সাবা",
     "eng":"34. Surah Saba"
   },
   {
-    "ban":"",
+    "arb":"35. فاطر",
+    "ban":"35. ফাতির",
     "eng":"35. Surah Fatir"
   },
   {
-    "ban":"",
+    "arb":"36. يس",
+    "ban":"36. ইয়াসীন",
     "eng":"36. Surah Yaseen"
   },
   {
-    "ban":"",
+    "arb":"37. الصافات",
+    "ban":"37. আস-সাফফাত",
     "eng":"37. Surah Saffat"
   },
   {
-    "ban":"",
+    "arb":"38. ص",
+    "ban":"38. ছোয়াদ",
     "eng":"38. Surah Sad"
   },
   {
-    "ban":"",
+    "arb":"39. الزمر",
+    "ban":"39. আল-যুমার",
     "eng":"39. Surah Zumar"
   },
   {
-    "ban":"",
+    "arb":"40. غافر",
+    "ban":"40. আল-মু’মিন",
     "eng":"40. Surah Ghafir"
   },
   {
-    "ban":"",
+    "arb":"41. فصلت",
+    "ban":"41. হা-মীম সেজদাহ",
     "eng":"41. Surah Fussilat"
   },
   {
-    "ban":"",
+    "arb":"42. الشورى",
+    "ban":"42. আশ-শুর",
     "eng":"42. Surah Shura"
   },
   {
-    "ban":"",
+    "arb":"43. الزخرف",
+    "ban":"43. যুখরুফ",
     "eng":"43. Surah Zukhruf"
   },
   {
-    "ban":"",
+    "arb":"44. الدخان",
+    "ban":"44. আদ দোখান",
     "eng":"44. Surah Dukhan"
   },
   {
-    "ban":"",
+    "arb":"45. الجاثية",
+    "ban":"45. আল জাসিয়",
     "eng":"45. Surah Jathiyah"
   },
   {
-    "ban":"",
+    "arb":"46. الأحقاف",
+    "ban":"46. আল আহক্বাফ",
     "eng":"46. Surah Ahqaf"
   },
   {
-    "ban":"",
+    "arb":"47. محمد",
+    "ban":"47. মুহাম্মদ",
     "eng":"47. Surah Muhammad"
   },
   {
-    "ban":"",
+    "arb":"48. الفتح",
+    "ban":"48. আল ফাতহ",
     "eng":"48. Surah Fath"
   },
   {
-    "ban":"",
+    "arb":"49. الحجرات",
+    "ban":"49. আল হুজরাত",
     "eng":"49. Surah Hujurat"
   },
   {
-    "ban":"",
+    "arb":"50. ق",
+    "ban":"50. ক্বাফ",
     "eng":"50. Surah Qaf"
   },
   {
-    "ban":"",
+    "arb":"51. الذاريات",
+    "ban":"51. আয-যারিয়াত",
     "eng":"51. Surah Dhariyat"
   },
   {
-    "ban":"",
+    "arb":"52. الطور",
+    "ban":"52. আত্ব তূর",
     "eng":"52. Surah Tur"
   },
   {
-    "ban":"",
+    "arb":"53. النجم",
+    "ban":"53. আন-নাজম",
     "eng":"53. Surah Najm"
   },
   {
-    "ban":"",
+    "arb":"54. القمر",
+    "ban":"54. আল ক্বামার",
     "eng":"54. Surah Qamar"
   },
   {
-    "ban":"",
+    "arb":"55. الرحمن",
+    "ban":"55. আর রহমান",
     "eng":"55. Surah Rahman"
   },
   {
-    "ban":"",
+    "arb":"56. الواقعة",
+    "ban":"56. আল ওয়াক্বিয়",
     "eng":"56. Surah Waqiah"
   },
   {
-    "ban":"",
+    "arb":"57. الحديد",
+    "ban":"57. আল হাদীদ",
     "eng":"57. Surah Hadid"
   },
   {
-    "ban":"",
+    "arb":"58. المجادلة",
+    "ban":"58. আল মুজাদালাহ",
     "eng":"58. Surah Mujadila"
   },
   {
-    "ban":"",
+    "arb":"59. الحشر",
+    "ban":"59. আল হাশর",
     "eng":"59. Surah Hashr"
   },
   {
-    "ban":"",
+    "arb":"60. الممتحنة",
+    "ban":"60. আল মুমতাহিনা",
     "eng":"60. Surah Mumtahana"
   },
   {
-    "ban":"",
+    "arb":"61. الصف",
+    "ban":"61. আছ-ছফ",
     "eng":"61. Surah Saff"
   },
   {
-    "ban":"",
+    "arb":"62. الجمعة",
+    "ban":"62. আল জুমুআহ",
     "eng":"62. Surah Jumah"
   },
   {
-    "ban":"",
+    "arb":"63. المنافقون",
+    "ban":"63. মুনাফিকুন",
     "eng":"63. Surah Munafiqoon"
   },
   {
-    "ban":"",
+    "arb":"64. التغابن",
+    "ban":"64. আত-তাগাবুন",
     "eng":"64. Surah Taghabun"
   },
   {
-    "ban":"",
+    "arb":"65. الطلاق",
+    "ban":"65. আত্ব-ত্বালাক্",
     "eng":"65. Surah Talaq"
   },
   {
-    "ban":"",
+    "arb":"66. التحريم",
+    "ban":"66. আত-তাহরীম",
     "eng":"66. Surah Tahrim"
   },
   {
-    "ban":"",
+    "arb":"67. الملك",
+    "ban":"67. আল মুলক",
     "eng":"67. Surah Mulk"
   },
   {
-    "ban":"",
+    "arb":"68. القلم",
+    "ban":"68. আল কলম",
     "eng":"68. Surah Qalam"
   },
   {
-    "ban":"",
+    "arb":"69. الحاقة",
+    "ban":"69. আল হাক্বক্বাহ",
     "eng":"69. Surah Haqqah"
   },
   {
-    "ban":"",
+    "arb":"70. المعارج",
+    "ban":"70. আল মা’আরিজ",
     "eng":"70. Surah Maarij"
   },
   {
-    "ban":"",
+    "arb":"71. نوح",
+    "ban":"71. নূহ",
     "eng":"71. Surah Nuh"
   },
   {
-    "ban":"",
+    "arb":"72. الجن",
+    "ban":"72. আল জিন",
     "eng":"72. Surah Jinn"
   },
   {
-    "ban":"",
+    "arb":"73. المزمل",
+    "ban":"73. মুযযামমিল",
     "eng":"73. Surah Muzammil"
   },
   {
-    "ban":"",
+    "arb":"74. المدثر",
+    "ban":"74. আল মুদ্দাসসির",
     "eng":"74. Surah Mudathir"
   },
   {
-    "ban":"",
+    "arb":"75. القيامة",
+    "ban":"75. আল ক্বেয়ামাহ",
     "eng":"75. Surah Qiyamah"
   },
   {
-    "ban":"",
+    "arb":"76. الانسان",
+    "ban":"76. আদ-দাহর",
     "eng":"76. Surah Insan"
   },
   {
-    "ban":"",
+    "arb":"77. المرسلات",
+    "ban":"77. আল মুরসালাত",
     "eng":"77. Surah Mursalat"
   },
   {
-    "ban":"",
+    "arb":"78. النبإ",
+    "ban":"78. আন-নাব",
     "eng":"78. Surah Naba"
   },
   {
-    "ban":"",
+    "arb":"79. النازعات",
+    "ban":"79. আন-নযিআ’ত",
     "eng":"79. Surah Naziat"
   },
   {
-    "ban":"",
+    "arb":"80. عبس",
+    "ban":"80. আবাসা",
     "eng":"80. Surah Abasa"
   },
   {
-    "ban":"",
+    "arb":"81. التكوير",
+    "ban":"81. আত-তাকভীর",
     "eng":"81. Surah Takwir"
   },
   {
-    "ban":"",
+    "arb":"82. الإنفطار",
+    "ban":"82. আল ইনফিতার",
     "eng":"82. Surah Infitar"
   },
   {
-    "ban":"",
+    "arb":"83. المطففين",
+    "ban":"83. আত-তাতফীফ",
     "eng":"83. Surah Mutaffifin"
   },
   {
-    "ban":"",
+    "arb":"84. الإنشقاق",
+    "ban":"84. আল ইনশিক্বাক্",
     "eng":"84. Surah Inshiqaq"
   },
   {
-    "ban":"",
+    "arb":"85. البروج",
+    "ban":"85. আল বুরূজ",
     "eng":"85. Surah Burooj"
   },
   {
-    "ban":"",
+    "arb":"86. الطارق",
+    "ban":"86. আত্ব-তারিক্",
     "eng":"86. Surah Tariq"
   },
   {
-    "ban":"",
+    "arb":"87. الأعلى",
+    "ban":"87. আল আ’লা",
     "eng":"87. Surah Ala"
   },
   {
-    "ban":"",
+    "arb":"88. الغاشية",
+    "ban":"88. আল গাশিয়াহ",
     "eng":"88. Surah Ghashiya"
   },
   {
-    "ban":"",
+    "arb":"89. الفجر",
+    "ban":"89. আল ফজর",
     "eng":"89. Surah Fajr"
   },
   {
-    "ban":"",
+    "arb":"90. البلد",
+    "ban":"90. আল বালাদ",
     "eng":"90. Surah Balad"
   },
   {
-    "ban":"",
+    "arb":"91. الشمس",
+    "ban":"91. আশ-শামস",
     "eng":"91. Surah Shams"
   },
   {
-    "ban":"",
+    "arb":"92. الليل",
+    "ban":"92. আল লায়ল",
     "eng":"92. Surah Layl"
   },
   {
-    "ban":"",
+    "arb":"93. الضحى",
+    "ban":"93. আদ্ব-দ্বোহা",
     "eng":"93. Surah Duha"
   },
   {
-    "ban":"",
+    "arb":"94. الشرح",
+    "ban":"94. আল ইনশিরাহ",
     "eng":"94. Surah Sharh"
   },
   {
-    "ban":"",
+    "arb":"95. التين",
+    "ban":"95. ত্বীন",
     "eng":"95. Surah Teen"
   },
   {
-    "ban":"",
+    "arb":"96. العلق",
+    "ban":"96. আলাক",
     "eng":"96. Surah Alaq"
   },
   {
-    "ban":"",
+    "arb":"97. القدر",
+    "ban":"97. কদর",
     "eng":"97. Surah Qadr"
   },
   {
-    "ban":"",
+    "arb":"98. البينة",
+    "ban":"98. বাইয়্যিনাহ",
     "eng":"98. Surah Bayyinah"
   },
   {
-    "ban":"",
+    "arb":"99. الزلزلة",
+    "ban":"99. যিলযাল",
     "eng":"99. Surah Zalzalah"
   },
   {
-    "ban":"",
+    "arb":"100. العاديات",
+    "ban":"100. আদিয়াত",
     "eng":"100. Surah Adiyat"
   },
   {
-    "ban":"",
+    "arb":"101. القارعة",
+    "ban":"101. কারেয়া",
     "eng":"101. Surah Qariah"
   },
   {
-    "ban":"",
+    "arb":"102. التكاثر",
+    "ban":"102. তাকাসূর",
     "eng":"102. Surah Takathur"
   },
   {
-    "ban":"",
+    "arb":"103. العصر",
+    "ban":"103. আছর",
     "eng":"103. Surah Asr"
   },
   {
-    "ban":"",
+    "arb":"104. الهمزة",
+    "ban":"104. হুমাযাহ",
     "eng":"104. Surah Humazah"
   },
   {
-    "ban":"",
+    "arb":"105. الفيل",
+    "ban":"105. ফীল",
     "eng":"105. Surah Feel"
   },
   {
-    "ban":"",
+    "arb":"106. قريش",
+    "ban":"106. কোরাইশ",
     "eng":"106. Surah Quraish"
   },
   {
-    "ban":"",
+    "arb":"107. الماعون",
+    "ban":"107. মাউন",
     "eng":"107. Surah Maun"
   },
   {
-    "ban":"",
+    "arb":"108. الكوثر",
+    "ban":"108. কাওসার",
     "eng":"108. Surah Kauthar"
   },
   {
-    "ban":"",
+    "arb":"109. الكافرون",
+    "ban":"109. কাফিরুন",
     "eng":"109. Surah Kafiroon"
   },
   {
-    "ban":"",
+    "arb":"110. النصر",
+    "ban":"110. নছর",
     "eng":"110. Surah Nasr"
   },
   {
-    "ban":"",
+    "arb":"111. المسد",
+    "ban":"111. লাহাব",
     "eng":"111. Surah Masad"
   },
   {
-    "ban":"",
+    "arb":"112. الإخلاص",
+    "ban":"112. এখলাছ",
     "eng":"112. Surah Ikhlas"
   },
   {
-    "ban":"",
+    "arb":"113. الفلق",
+    "ban":"113. ফালাক্ব",
     "eng":"113. Surah Falaq"
   },
   {
-    "ban":"",
+    "arb":"114. الناس",
+    "ban":"114. নাস",
     "eng":"114. Surah Nas"
   }
 ]
