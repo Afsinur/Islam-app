@@ -1,10 +1,11 @@
 <div id="_round"></div>
 <header>
-  <span><i class="fas fa-kaaba"></i> Islamic app</span><span>| Read Quran</span>
+  <span><i class="fas fa-kaaba"></i> Islamic app</span
+  ><span>| Read Hadiths</span>
 </header>
 <section>
   <nav>
-    <span>Surahs</span>
+    <span>Hadiths</span>
   </nav>
 </section>
 <div id="column_surahs">
@@ -14,7 +15,7 @@
   $(document).ready(function () {
     $.ajax({
       type: "get",
-      url: "json/surah_names/1_surah_names.json",
+      url: "json/hadiths_names/1_hadiths_names.json",
       success: function (data) {
         var x = JSON.stringify(data);
         var y = JSON.parse(x);

@@ -2,26 +2,28 @@
 <header>
   <span><i class="fas fa-kaaba"></i> Islamic app</span><span>| Read Quran</span>
 </header>
-<nav>
-  <span>Surahs</span>
-</nav>
+<section>
+  <nav>
+    <span>Surahs</span>
+  </nav>
+</section>
 <div id="column_surahs">
   <!--append 1st-->
 </div>
 <script type="text/javascript">
-  $(document).ready(function(){
+  $(document).ready(function () {
     $.ajax({
-      type:'get',
-      url:'json/surah_names/1_surah_names.json',
-      success:function (data) {
+      type: "get",
+      url: "json/surah_names/1_surah_names.json",
+      success: function (data) {
         var x = JSON.stringify(data);
         var y = JSON.parse(x);
         y.forEach((item, i) => {
-          $('div#column_surahs').append(`
+          $("div#column_surahs").append(`
           <p>${y[i].eng}</p>
           `);
         });
-      }
+      },
     });
   });
 </script>

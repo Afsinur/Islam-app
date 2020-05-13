@@ -1,14 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
+
 @media screen and (max-width:480px) {
-  body{
-    padding-top: 94px;
+  body {
+    padding-top: 110px;
   }
-  div#_round{
+
+  div#_round {
     position: fixed;
     top: 40%;
     left: 33.5%;
@@ -22,15 +24,18 @@
     z-index: 9;
     animation: _round 400ms linear infinite;
   }
+
   @keyframes _round {
-    0%{
+    0% {
       transform: rotate(0deg);
     }
-    100%{
+
+    100% {
       transform: rotate(360deg);
     }
   }
-  header{
+
+  header {
     position: fixed;
     top: 0;
     left: 0;
@@ -39,13 +44,15 @@
     padding: 10px 0;
     z-index: 8;
   }
-  header span{
+
+  header span {
     padding: 5px;
     font-size: 20px;
     font-weight: 500;
     color: #fff;
   }
-  nav{
+
+  section {
     position: fixed;
     top: 47px;
     left: 0;
@@ -54,20 +61,29 @@
     padding: 10px 0;
     color: #fff;
     z-index: 8;
+    overflow-y: hidden;
   }
-  nav span{
+
+  nav {
+    position: relative;
+    display: flex;
+  }
+
+  nav span {
     padding: 5px;
     font-size: 20px;
     font-weight: 500;
   }
-  nav select{
+
+  nav select {
     padding: 2px;
     font-size: 18px;
     font-weight: 500;
     border-radius: 2px;
     outline: none;
   }
-  div#column_surahs{
+
+  div#column_surahs {
     position: relative;
     width: 100%;
     padding: 5px 0;
@@ -76,7 +92,8 @@
     align-items: center;
     justify-content: center;
   }
-  div#column_surahs p{
+
+  div#column_surahs p {
     width: 95%;
     font-size: 20px;
     font-weight: 500;
@@ -87,12 +104,14 @@
     border-radius: 2px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   }
-  div#column_surahs p:active{
+
+  div#column_surahs p:active {
     background: #0fc;
     color: #000;
   }
+
   div.surahs_main,
-  div.surahs_main div{
+  div.surahs_main div {
     position: relative;
     padding: 5px 0;
     width: 100%;
@@ -101,7 +120,8 @@
     align-items: center;
     justify-content: center;
   }
-  div.surahs_main p{
+
+  div.surahs_main p {
     width: 95%;
     padding: 5px 0;
     font-size: 20px;
@@ -111,11 +131,12 @@
     background: #fafafa;
     border-radius: 2px;
   }
-  div.div_1{
+
+  div.div_1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 60vh;
     display: flex;
@@ -125,7 +146,8 @@
     align-content: center;
     justify-content: center;
   }
-  div.common_div_1{
+
+  div.common_div_1 {
     position: relative;
     width: 25%;
     height: 12.5vh;
@@ -136,7 +158,8 @@
     align-content: center;
     justify-content: center;
   }
-  div.common_div_1 button{
+
+  div.common_div_1 button {
     height: 12.5vh;
     padding: 5px 0;
     width: 100%;
@@ -152,24 +175,40 @@
     align-content: center;
     justify-content: flex-end;
   }
-  div.common_div_1 button i{
+
+  div.common_div_1 button i {
     position: absolute;
     top: 0;
     left: 0;
   }
-  div.common_div_1 button span{
+
+  div.common_div_1 button span {
     width: 100%;
   }
-  div.common_div_1 button:active{
+
+  div.common_div_1 button:active {
     background: #0fc;
     color: #000;
   }
-  footer{
+
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 5px 0;
     background: #303030;
+  }
+
+  div.surahs_main p.after_that {
+    width: 95%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 0;
+    margin: 5px 0;
+    background: #efefef;
+    color: #303030;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   }
 }

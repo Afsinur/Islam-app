@@ -1,5 +1,31 @@
 <div id="_round"></div>
 <header>
-  <span><i class="fas fa-kaaba"></i> Islamic app</span><span>| Read Hadiths</span>
+  <span><i class="fas fa-kaaba"></i> Islamic app</span
+  ><span>| Read Hadiths</span>
 </header>
+<section>
+  <nav>
+    <span>Hadiths</span>
+  </nav>
+</section>
+<div id="column_surahs">
+  <!--append 1st-->
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.ajax({
+      type: "get",
+      url: "json/hadiths_names/1_hadiths_names.json",
+      success: function (data) {
+        var x = JSON.stringify(data);
+        var y = JSON.parse(x);
+        y.forEach((item, i) => {
+          $("div#column_surahs").append(`
+          <p>${y[i].ban}</p>
+          `);
+        });
+      },
+    });
+  });
+</script>
 <footer></footer>
