@@ -6,8 +6,10 @@ $(document).ready(function () {
   var arb, ban, eng;
   //-----same_01_01
   $(window).scroll(function () {
-    var ins_sr_1 = $("div.surahs_main div").text();
+    var ins_sr_1 = $("div.surahs_main > div > p").text();
     var ins_selt_1 = $("select#select_surahs").val();
+    var ins_selt_1_2 = $("select#select_surahs_2").val();
+    var ins_sr_2 = $("body > div.surahs_main > div > p.hd_after_that").text();
     if (ins_sr_1 != "") {
       if (eng == "eng") {
         var pos = ins_selt_1.indexOf(".");
@@ -57,6 +59,59 @@ $(document).ready(function () {
             sura_counter++;
           },
         });
+      } else if (ins_sr_2 != "") {
+        if (arb == "arb_h") {
+          var pos = ins_selt_1.indexOf(".");
+          var res = ins_selt_1.slice(0, pos);
+          var pos_1 = ins_selt_1_2.indexOf(".");
+          var res_1 = ins_selt_1_2.slice(0, pos_1);
+          $.ajax({
+            type: "get",
+            url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
+            success: function (data) {
+              if (sura_counter > fourtnn_1 && sura_counter < data.length) {
+                $("div.surahs_main div").append(`
+                  <p class="hd_after_that">${data[sura_counter].arb}</p>
+                  `);
+              }
+              sura_counter++;
+            },
+          });
+        } else if (ban == "ban_h") {
+          var pos = ins_selt_1.indexOf(".");
+          var res = ins_selt_1.slice(0, pos);
+          var pos_1 = ins_selt_1_2.indexOf(".");
+          var res_1 = ins_selt_1_2.slice(0, pos_1);
+          $.ajax({
+            type: "get",
+            url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
+            success: function (data) {
+              if (sura_counter > fourtnn_1 && sura_counter < data.length) {
+                $("div.surahs_main div").append(`
+                  <p class="hd_after_that">${data[sura_counter].ban}</p>
+                  `);
+              }
+              sura_counter++;
+            },
+          });
+        } else if (eng == "eng_h") {
+          var pos = ins_selt_1.indexOf(".");
+          var res = ins_selt_1.slice(0, pos);
+          var pos_1 = ins_selt_1_2.indexOf(".");
+          var res_1 = ins_selt_1_2.slice(0, pos_1);
+          $.ajax({
+            type: "get",
+            url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
+            success: function (data) {
+              if (sura_counter > fourtnn_1 && sura_counter < data.length) {
+                $("div.surahs_main div").append(`
+                  <p class="hd_after_that">${data[sura_counter].eng}</p>
+                  `);
+              }
+              sura_counter++;
+            },
+          });
+        }
       }
     }
   });
@@ -347,7 +402,6 @@ $(document).ready(function () {
       $("div#_round").removeAttr("style");
       sura_counter = 0;
       var x_2 = $("nav select#select_surahs").val();
-      var x_3 = $("nav select#select_surahs_2").val();
       var x_1 = $(this).text();
       $.ajax({
         type: "get",
@@ -371,16 +425,16 @@ $(document).ready(function () {
                   `);
                 }
               });
-              var pos = x_1.indexOf(".");
-              var res = x_1.slice(0, pos);
+              var pos = x_2.indexOf(".");
+              var res = x_2.slice(0, pos);
               $.ajax({
                 type: "get",
                 url: "json/hadiths/" + res + ".json",
                 success: function (data) {
-                  var x_1 = JSON.stringify(data);
-                  var y_1 = JSON.parse(x_1);
+                  var x_1_1 = JSON.stringify(data);
+                  var y_1 = JSON.parse(x_1_1);
                   y_1.forEach((item, i) => {
-                    if (y_1[i].arb == x_3) {
+                    if (y_1[i].arb == x_1) {
                       $("span > select#select_surahs_2").append(`
                       <option value="${y_1[i].arb}" selected>${y_1[i].arb}</option>
                       `);
@@ -392,15 +446,18 @@ $(document).ready(function () {
                   });
                 },
               });
+              var pos_1 = x_1.indexOf(".");
+              var res_1 = x_1.slice(0, pos_1);
+              console.log(res, res_1);
               $.ajax({
                 type: "get",
-                url: "json/hadiths_1/" + res + ".json",
+                url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
                 success: function (data) {
                   data.forEach((item, i) => {
                     if (i < fivetnn_1) {
                       $("div.surahs_main div").append(`
-                        <p>${data[i].arb}</p>
-                        `);
+                      <p class="hd_after_that">${data[i].arb}</p>
+                      `);
                     }
                   });
                   $("div#_round").css("display", "none");
@@ -415,7 +472,6 @@ $(document).ready(function () {
       $("div#_round").removeAttr("style");
       sura_counter = 0;
       var x_2 = $("nav select#select_surahs").val();
-      var x_3 = $("nav select#select_surahs_2").val();
       var x_1 = $(this).text();
       $.ajax({
         type: "get",
@@ -439,16 +495,16 @@ $(document).ready(function () {
                   `);
                 }
               });
-              var pos = x_1.indexOf(".");
-              var res = x_1.slice(0, pos);
+              var pos = x_2.indexOf(".");
+              var res = x_2.slice(0, pos);
               $.ajax({
                 type: "get",
                 url: "json/hadiths/" + res + ".json",
                 success: function (data) {
-                  var x_1 = JSON.stringify(data);
-                  var y_1 = JSON.parse(x_1);
+                  var x_1_1 = JSON.stringify(data);
+                  var y_1 = JSON.parse(x_1_1);
                   y_1.forEach((item, i) => {
-                    if (y_1[i].ban == x_3) {
+                    if (y_1[i].ban == x_1) {
                       $("span > select#select_surahs_2").append(`
                       <option value="${y_1[i].ban}" selected>${y_1[i].ban}</option>
                       `);
@@ -460,15 +516,18 @@ $(document).ready(function () {
                   });
                 },
               });
+              var pos_1 = x_1.indexOf(".");
+              var res_1 = x_1.slice(0, pos_1);
+              console.log(res, res_1);
               $.ajax({
                 type: "get",
-                url: "json/hadiths_1/" + res + ".json",
+                url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
                 success: function (data) {
                   data.forEach((item, i) => {
                     if (i < fivetnn_1) {
                       $("div.surahs_main div").append(`
-                        <p>${data[i].ban}</p>
-                        `);
+                      <p class="hd_after_that">${data[i].ban}</p>
+                      `);
                     }
                   });
                   $("div#_round").css("display", "none");
@@ -483,7 +542,6 @@ $(document).ready(function () {
       $("div#_round").removeAttr("style");
       sura_counter = 0;
       var x_2 = $("nav select#select_surahs").val();
-      var x_3 = $("nav select#select_surahs_2").val();
       var x_1 = $(this).text();
       $.ajax({
         type: "get",
@@ -507,16 +565,16 @@ $(document).ready(function () {
                   `);
                 }
               });
-              var pos = x_1.indexOf(".");
-              var res = x_1.slice(0, pos);
+              var pos = x_2.indexOf(".");
+              var res = x_2.slice(0, pos);
               $.ajax({
                 type: "get",
                 url: "json/hadiths/" + res + ".json",
                 success: function (data) {
-                  var x_1 = JSON.stringify(data);
-                  var y_1 = JSON.parse(x_1);
+                  var x_1_1 = JSON.stringify(data);
+                  var y_1 = JSON.parse(x_1_1);
                   y_1.forEach((item, i) => {
-                    if (y_1[i].eng == x_3) {
+                    if (y_1[i].eng == x_1) {
                       $("span > select#select_surahs_2").append(`
                       <option value="${y_1[i].eng}" selected>${y_1[i].eng}</option>
                       `);
@@ -528,15 +586,232 @@ $(document).ready(function () {
                   });
                 },
               });
+              var pos_1 = x_1.indexOf(".");
+              var res_1 = x_1.slice(0, pos_1);
+              console.log(res, res_1);
               $.ajax({
                 type: "get",
-                url: "json/hadiths_1/" + res + ".json",
+                url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
                 success: function (data) {
                   data.forEach((item, i) => {
                     if (i < fivetnn_1) {
                       $("div.surahs_main div").append(`
-                        <p>${data[i].eng}</p>
-                        `);
+                      <p class="hd_after_that">${data[i].eng}</p>
+                      `);
+                    }
+                  });
+                  $("div#_round").css("display", "none");
+                },
+              });
+            },
+          });
+        },
+      });
+    }
+  });
+  //-----
+  $("body").on("change", "span > select#select_surahs_2", function () {
+    if (arb == "arb_h") {
+      $("span > select#select_surahs_2").css("display", "block");
+      $("div#_round").removeAttr("style");
+      sura_counter = 0;
+      var x_2 = $("nav select#select_surahs").val();
+      var x_1 = $(this).val();
+      $.ajax({
+        type: "get",
+        url: "get_hadiths/2.html",
+        success: function (data) {
+          $("body").html(data);
+          $.ajax({
+            type: "get",
+            url: "json/hadiths_names/1_hadiths_names.json",
+            success: function (data) {
+              var x = JSON.stringify(data);
+              var y = JSON.parse(x);
+              y.forEach((item, i) => {
+                if (y[i].arb == x_2) {
+                  $("span > select#select_surahs").append(`
+                  <option value="${y[i].arb}" selected>${y[i].arb}</option>
+                  `);
+                } else {
+                  $("span > select#select_surahs").append(`
+                  <option value="${y[i].arb}">${y[i].arb}</option>
+                  `);
+                }
+              });
+              var pos = x_2.indexOf(".");
+              var res = x_2.slice(0, pos);
+              $.ajax({
+                type: "get",
+                url: "json/hadiths/" + res + ".json",
+                success: function (data) {
+                  var x_1_1 = JSON.stringify(data);
+                  var y_1 = JSON.parse(x_1_1);
+                  y_1.forEach((item, i) => {
+                    if (y_1[i].arb == x_1) {
+                      $("span > select#select_surahs_2").append(`
+                      <option value="${y_1[i].arb}" selected>${y_1[i].arb}</option>
+                      `);
+                    } else {
+                      $("span > select#select_surahs_2").append(`
+                      <option value="${y_1[i].arb}">${y_1[i].arb}</option>
+                      `);
+                    }
+                  });
+                },
+              });
+              var pos_1 = x_1.indexOf(".");
+              var res_1 = x_1.slice(0, pos_1);
+              console.log(res, res_1);
+              $.ajax({
+                type: "get",
+                url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
+                success: function (data) {
+                  data.forEach((item, i) => {
+                    if (i < fivetnn_1) {
+                      $("div.surahs_main div").append(`
+                      <p class="hd_after_that">${data[i].arb}</p>
+                      `);
+                    }
+                  });
+                  $("div#_round").css("display", "none");
+                },
+              });
+            },
+          });
+        },
+      });
+    } else if (ban == "ban_h") {
+      $("span > select#select_surahs_2").css("display", "block");
+      $("div#_round").removeAttr("style");
+      sura_counter = 0;
+      var x_2 = $("nav select#select_surahs").val();
+      var x_1 = $(this).val();
+      $.ajax({
+        type: "get",
+        url: "get_hadiths/2.html",
+        success: function (data) {
+          $("body").html(data);
+          $.ajax({
+            type: "get",
+            url: "json/hadiths_names/1_hadiths_names.json",
+            success: function (data) {
+              var x = JSON.stringify(data);
+              var y = JSON.parse(x);
+              y.forEach((item, i) => {
+                if (y[i].ban == x_2) {
+                  $("span > select#select_surahs").append(`
+                  <option value="${y[i].ban}" selected>${y[i].ban}</option>
+                  `);
+                } else {
+                  $("span > select#select_surahs").append(`
+                  <option value="${y[i].ban}">${y[i].ban}</option>
+                  `);
+                }
+              });
+              var pos = x_2.indexOf(".");
+              var res = x_2.slice(0, pos);
+              $.ajax({
+                type: "get",
+                url: "json/hadiths/" + res + ".json",
+                success: function (data) {
+                  var x_1_1 = JSON.stringify(data);
+                  var y_1 = JSON.parse(x_1_1);
+                  y_1.forEach((item, i) => {
+                    if (y_1[i].ban == x_1) {
+                      $("span > select#select_surahs_2").append(`
+                      <option value="${y_1[i].ban}" selected>${y_1[i].ban}</option>
+                      `);
+                    } else {
+                      $("span > select#select_surahs_2").append(`
+                      <option value="${y_1[i].ban}">${y_1[i].ban}</option>
+                      `);
+                    }
+                  });
+                },
+              });
+              var pos_1 = x_1.indexOf(".");
+              var res_1 = x_1.slice(0, pos_1);
+              console.log(res, res_1);
+              $.ajax({
+                type: "get",
+                url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
+                success: function (data) {
+                  data.forEach((item, i) => {
+                    if (i < fivetnn_1) {
+                      $("div.surahs_main div").append(`
+                      <p class="hd_after_that">${data[i].ban}</p>
+                      `);
+                    }
+                  });
+                  $("div#_round").css("display", "none");
+                },
+              });
+            },
+          });
+        },
+      });
+    } else if (eng == "eng_h") {
+      $("span > select#select_surahs_2").css("display", "block");
+      $("div#_round").removeAttr("style");
+      sura_counter = 0;
+      var x_2 = $("nav select#select_surahs").val();
+      var x_1 = $(this).val();
+      $.ajax({
+        type: "get",
+        url: "get_hadiths/2.html",
+        success: function (data) {
+          $("body").html(data);
+          $.ajax({
+            type: "get",
+            url: "json/hadiths_names/1_hadiths_names.json",
+            success: function (data) {
+              var x = JSON.stringify(data);
+              var y = JSON.parse(x);
+              y.forEach((item, i) => {
+                if (y[i].eng == x_2) {
+                  $("span > select#select_surahs").append(`
+                  <option value="${y[i].eng}" selected>${y[i].eng}</option>
+                  `);
+                } else {
+                  $("span > select#select_surahs").append(`
+                  <option value="${y[i].eng}">${y[i].eng}</option>
+                  `);
+                }
+              });
+              var pos = x_2.indexOf(".");
+              var res = x_2.slice(0, pos);
+              $.ajax({
+                type: "get",
+                url: "json/hadiths/" + res + ".json",
+                success: function (data) {
+                  var x_1_1 = JSON.stringify(data);
+                  var y_1 = JSON.parse(x_1_1);
+                  y_1.forEach((item, i) => {
+                    if (y_1[i].eng == x_1) {
+                      $("span > select#select_surahs_2").append(`
+                      <option value="${y_1[i].eng}" selected>${y_1[i].eng}</option>
+                      `);
+                    } else {
+                      $("span > select#select_surahs_2").append(`
+                      <option value="${y_1[i].eng}">${y_1[i].eng}</option>
+                      `);
+                    }
+                  });
+                },
+              });
+              var pos_1 = x_1.indexOf(".");
+              var res_1 = x_1.slice(0, pos_1);
+              console.log(res, res_1);
+              $.ajax({
+                type: "get",
+                url: "json/hadiths_1/hd" + res + "/" + res_1 + ".json",
+                success: function (data) {
+                  data.forEach((item, i) => {
+                    if (i < fivetnn_1) {
+                      $("div.surahs_main div").append(`
+                      <p class="hd_after_that">${data[i].eng}</p>
+                      `);
                     }
                   });
                   $("div#_round").css("display", "none");
